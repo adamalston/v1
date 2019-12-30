@@ -3993,7 +3993,7 @@
     n(8), n(9), n(10);
     h(), s()(document).ready(function() {
         var e, t;
-        e = ".hero__typing-content", t = "I <b class='lite-blue'>CODE</b> therefore <b class='green'>I AM.</b>", new u.a(e, i()({}, c, {
+        e = ".hero__typing-content", t = "I <b class='light-blue'>CODE</b> therefore <b class='green'>I AM.</b>", new u.a(e, i()({}, c, {
             strings: [t]
         })), s()(window).on("scroll", function() {
             40 <= s()(window).scrollTop() ? s()(".navbar").addClass("hide-background") : s()(".navbar").removeClass("hide-background")

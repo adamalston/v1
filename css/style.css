@@ -6,7 +6,7 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
 
-.lite-blue {
+.light-blue {
   color: #58b7ff;
 }
 
@@ -474,8 +474,17 @@ a,a:active,a:hover {
 
 .timeline-card-title {
   padding: 1rem 2rem;
-  font-size: 1.4rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 0;
+}
+
+.timeline-card-subtitle {
+  padding: 1rem 2rem;
+  padding-top: .25rem;
+  font-size: 1rem;
+  font-size: 1.3rem;
+  font-style: italic;
 }
 
 .timeline-card-content {
@@ -501,6 +510,10 @@ a,a:active,a:hover {
   color: #3facff;
 }
 
+.timeline-card--light-blue .timeline-card-subtitle {
+  color: #3facff;
+}
+
 .timeline-card--light-blue .timeline-card-time {
   background-color: #58b7ff;
 }
@@ -514,6 +527,10 @@ a,a:active,a:hover {
 }
 
 .timeline-card--light-red .timeline-card-title {
+  color: #f35454;
+}
+
+.timeline-card--light-red .timeline-card-subtitle {
   color: #f35454;
 }
 
@@ -534,6 +551,10 @@ a,a:active,a:hover {
 }
 
 .timeline-card--green .timeline-card-title {
+  color: #11b75a;
+}
+
+.timeline-card--green .timeline-card-subtitle {
   color: #11b75a;
 }
 
@@ -647,8 +668,8 @@ a,a:active,a:hover {
   margin: 1.5rem 1rem 2.5rem;
   width: 24rem;
   height: 33rem;
-  background-color: #f2f2f2;
-  box-shadow: .2rem .2rem .6rem #c0c4cc;
+  background-color: rgb(54, 54, 54);
+  /* box-shadow: .5rem .5rem .5rem #c0c4cc; */
 }
 
 @media (max-width:575px) {
@@ -705,7 +726,7 @@ a,a:active,a:hover {
 .project-card-title {
   margin-top: 1rem;
   font-size: 2.2rem;
-  color: #606266;
+  color: white;
 }
 
 .project-card-tags-wrapper {
@@ -718,9 +739,9 @@ a,a:active,a:hover {
   font-size: 1rem;
   padding: .1rem .4rem;
   margin: .3rem .4rem;
-  border: .1rem solid #c0c4cc;
+  border: .1rem solid gray;
   border-radius: .2rem;
-  color: #909399;
+  color: white;
 }
 
 .project-card-tag--ongoing {
@@ -755,7 +776,7 @@ a,a:active,a:hover {
 }
 
 .project-card-blackbutton:hover {
-  background: #303133;
+  background: rgb(54, 54, 54);
 }
 
 .footer {
