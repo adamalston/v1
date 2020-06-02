@@ -215,7 +215,7 @@ a,a:active,a:hover {
   width: 100%;
   height: 100vh;
   min-height: 56rem;
-  background: url(/assets/jpl.jpg) 50%;
+  background: url(assets/jpl.jpg) 50%;
   background-size: cover;
 }
 
@@ -609,7 +609,7 @@ a,a:active,a:hover {
   left: 0;
   right: 0;
   z-index: -5;
-  background: url(/assets/jpl.jpg) 50%;
+  background: url(assets/jpl.jpg) 50%;
   filter: brightness(15%);
   background-size: cover;
 }
@@ -687,23 +687,23 @@ a,a:active,a:hover {
 }
 
 .project-card-website {
-  background-image: url(/assets/project-website.png);
+  background-image: url(assets/project-website.png);
 }
 
 .project-card-summarizer {
-  background-image: url(/assets/project-summarizer.png);
+  background-image: url(assets/project-summarizer.png);
 }
 
 .project-card-2048 {
-  background-image: url(/assets/project-2048.png);
+  background-image: url(assets/project-2048.png);
 }
 
 .project-card-connect4 {
-  background-image: url(/assets/project-connect4.png);
+  background-image: url(assets/project-connect4.png);
 }
 
 .project-card-smmryextension {
-  background-image: url(/assets/project-smmryextension.png);
+  background-image: url(assets/project-smmryextension.png);
 }
 
 .project-card-sushi {
@@ -711,7 +711,7 @@ a,a:active,a:hover {
 }
 
 .project-card-pokemongo {
-  background-image: url(/assets/project-pokemongo.jpeg);
+  background-image: url(assets/project-pokemongo.jpeg);
 }
 
 
