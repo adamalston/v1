@@ -31,7 +31,7 @@ body {
 
 a, a:active, a:hover {
     text-decoration: none;
-    color: #f2f2f2;
+    color: white;
 }
 
 .container {
@@ -572,14 +572,13 @@ a, a:active, a:hover {
     background-color: #181a1b;
     color: lightgray;
     margin: .2rem;
-    cursor: pointer;
     transition: all .25s linear;
     border-radius: 2rem;
 }
 
 .skills-tile:hover {
-    background-color: lightgray;
-    color: #181a1b;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .project {
@@ -649,7 +648,7 @@ a, a:active, a:hover {
     display: inline-block;
     margin: 1.5rem 1rem 2.5rem;
     width: 24rem;
-    height: 28rem;
+    height: 27rem;
     background-color: rgb(54, 54, 54);
     border-radius: 2rem;
     border: .3rem solid rgb(54, 54, 54);
@@ -707,7 +706,6 @@ a, a:active, a:hover {
 }
 
 .project-card-title {
-    margin-top: 1rem;
     font-size: 2.2rem;
     color: white;
 }
@@ -715,26 +713,29 @@ a, a:active, a:hover {
 .project-card-btn {
     position: absolute;
     display: inline-block;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: .5rem;
+    right: .5rem;
     padding: .8rem 2rem;
     font-size: 1.2rem;
-    color: #f2f2f2;
+    color: white;
     background: #20a0ff;
     border-radius: 2rem;
     transition: all .2s linear;
+    border: .1em solid transparent;
 }
 
 .project-card-btn:hover {
-    background: #1d8ce0;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    border: .1em solid white;
 }
 
 .project-card-blackbutton {
-    background: #000000;
+    background: black;
 }
 
 .project-card-blackbutton:hover {
-    background: rgb(54, 54, 54);
+    border: .1em solid white;
 }
 
 .footer {
