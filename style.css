@@ -382,7 +382,7 @@ a, a:active, a:hover {
     display: flex;
     height: 15rem;
     background-color: #181a1b;
-    border-radius: .5rem;
+    border-radius: 2rem;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .05);
     transition: all .2s linear;
     padding: 2rem;
@@ -427,7 +427,7 @@ a, a:active, a:hover {
     max-width: 35rem;
     color: #409eff;
     border: .1rem solid #409eff;
-    border-radius: .5rem;
+    border-radius: 2rem;
 }
 
 .timeline-card:before {
@@ -475,10 +475,8 @@ a, a:active, a:hover {
 }
 
 .timeline-card-time {
-    padding: .5rem 1rem;
+    padding: .5rem 2rem;
     text-align: right;
-    background-color: #409eff;
-    color: #f2f2f2;
     font-size: 1.2rem;
 }
 
@@ -496,7 +494,7 @@ a, a:active, a:hover {
 }
 
 .timeline-card--light-blue .timeline-card-time {
-    background-color: #58b7ff;
+    color: #58b7ff;
 }
 
 .timeline-card--light-red {
@@ -520,7 +518,7 @@ a, a:active, a:hover {
 }
 
 .timeline-card--light-red .timeline-card-time {
-    background-color: #f56c6c;
+    color: #f56c6c;
 }
 
 .timeline-card--green {
@@ -544,7 +542,7 @@ a, a:active, a:hover {
 }
 
 .timeline-card--green .timeline-card-time {
-    background-color: #13ce66;
+    color: #13ce66;
 }
 
 .skills-title {
@@ -576,6 +574,7 @@ a, a:active, a:hover {
     margin: .2rem;
     cursor: pointer;
     transition: all .25s linear;
+    border-radius: 2rem;
 }
 
 .skills-tile:hover {
@@ -653,7 +652,7 @@ a, a:active, a:hover {
     height: 28rem;
     background-color: rgb(54, 54, 54);
     border-radius: 2rem;
-    /* box-shadow: .5rem .5rem .5rem #c0c4cc; */
+    border: .3rem solid rgb(54, 54, 54);
 }
 
 @media (max-width:575px) {
