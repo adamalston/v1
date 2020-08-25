@@ -20,8 +20,7 @@
 html {
     font-size: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #303133;
-    background-color: #f2f2f2;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -32,6 +31,7 @@ body {
 a, a:active, a:hover {
     text-decoration: none;
     color: white;
+    outline: 0;
 }
 
 .container {
@@ -81,54 +81,13 @@ a, a:active, a:hover {
     }
 }
 
-@-webkit-keyframes bounce {
-    0%, 20%, 50%, 80%, to {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    40% {
-        -webkit-transform: translateY(-1rem);
-        transform: translateY(-1rem);
-    }
-    60% {
-        -webkit-transform: translateY(-.5rem);
-        transform: translateY(-.5rem);
-    }
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, to {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    40% {
-        -webkit-transform: translateY(-1rem);
-        transform: translateY(-1rem);
-    }
-    60% {
-        -webkit-transform: translateY(-.5rem);
-        transform: translateY(-.5rem);
-    }
-}
-
 .navbar {
     position: fixed;
-    right: 0;
-    z-index: 100;
-}
-
-.navbar, .navbar:after {
     top: 0;
     left: 0;
-    transition: all .2s linear;
-}
-
-.navbar:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    background: rgba(0, 0, 0, .1);
+    right: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width:767px) {
@@ -175,24 +134,6 @@ a, a:active, a:hover {
     opacity: 1;
 }
 
-.nav-item.active a {
-    color: #67c23a;
-}
-
-.nav-item.active:after {
-    opacity: 1;
-    background-color: #67c23a;
-}
-
-.navbar.hide-background:after {
-    background: #000;
-    opacity: .8;
-}
-
-.navbar.hide-background .navbar-container {
-    min-height: 4rem;
-}
-
 .hero {
     position: relative;
     display: flex;
@@ -200,20 +141,6 @@ a, a:active, a:hover {
     width: 100%;
     height: 100vh;
     min-height: 56rem;
-    background: url(assets/jpl.jpg) 50%;
-    background-size: cover;
-}
-
-.hero:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #000;
-    opacity: .85;
-    z-index: 0;
 }
 
 .hero .hero-container {
@@ -224,24 +151,6 @@ a, a:active, a:hover {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    z-index: 1;
-}
-
-.hero__typing-wrapper {
-    display: flex;
-    margin-bottom: 3rem;
-    font-size: 1.6rem;
-    font-family: Roboto Mono, monospace;
-    min-height: 2rem;
-    min-width: 22rem;
-    color: #f2f2f2;
-}
-
-@media (max-width:575px) {
-    .hero__typing-wrapper {
-        font-size: 1.2rem;
-        min-width: 16.5rem;
-    }
 }
 
 .hero__profile {
@@ -263,7 +172,7 @@ a, a:active, a:hover {
     justify-content: center;
     align-items: center;
     padding: .3rem;
-    background: linear-gradient(270deg, #743ad5, #d53a9d);
+    background: linear-gradient(270deg, #58b7ff, #13ce66);
     border-radius: 100%;
 }
 
@@ -277,7 +186,7 @@ a, a:active, a:hover {
     width: 100%;
     margin-top: 2rem;
     justify-content: center;
-    font-size: 2.4rem;
+    font-size: 4rem;
 }
 
 @media (max-width:991px) {
@@ -289,30 +198,30 @@ a, a:active, a:hover {
 
 .hero .icon-link {
     padding: 0 1.5rem;
-    color: #909399;
+    color: lightgray;
 }
 
 .hero .icon-link:hover {
-    color: #f2f2f2;
+    color: white;
 }
 
 .hero__profile-content {
-    padding-top: 3rem;
+    padding-top: 2rem;
     text-align: center;
 }
 
 .hero__headline {
-    font-size: 2.4rem;
+    font-size: 3rem;
     font-weight: 400;
     padding-bottom: 1rem;
-    color: #f2f2f2;
-    letter-spacing: .3rem;
+    color: white;
+    letter-spacing: .1rem;
 }
 
 .hero__text {
     font-size: 1.4rem;
     font-weight: 400;
-    color: #909399;
+    color: lightgray;
 }
 
 .hero .arrow {
@@ -330,8 +239,34 @@ a, a:active, a:hover {
     }
 }
 
-.about {
-    background-color: #f2f2f2;
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-1rem);
+        transform: translateY(-1rem);
+    }
+    60% {
+        -webkit-transform: translateY(-.5rem);
+        transform: translateY(-.5rem);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-1rem);
+        transform: translateY(-1rem);
+    }
+    60% {
+        -webkit-transform: translateY(-.5rem);
+        transform: translateY(-.5rem);
+    }
 }
 
 .about .about-container {
@@ -339,17 +274,17 @@ a, a:active, a:hover {
 }
 
 .about-experiencecol, .about-educationcol {
-    padding-bottom: 10rem;
+    padding-bottom: 1rem;
 }
 
 @media (max-width:767px) {
     .about-experiencecol, .about-skillcol, .about-educationcol {
-        padding-bottom: 5rem;
+        padding-bottom: 1rem;
     }
 }
 
 .about-timeline {
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-right: 3rem;
 }
 
@@ -450,7 +385,7 @@ a, a:active, a:hover {
     height: 110%;
     min-height: 15rem;
     width: .4rem;
-    background-color: #e4e7ed;
+    background-color: #181a1b;
 }
 
 .timeline-card-title {
@@ -558,10 +493,6 @@ a, a:active, a:hover {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#resume {
-    color: black;
-}
-
 .skills-content {
     display: flex;
     flex-wrap: wrap;
@@ -593,7 +524,7 @@ a, a:active, a:hover {
     height: 100vh;
     left: 0;
     right: 0;
-    z-index: -5;
+    z-index: -1;
     background: url(assets/jpl.jpg) 50%;
     filter: brightness(15%);
     background-size: cover;
@@ -640,18 +571,18 @@ a, a:active, a:hover {
 }
 
 .project-container {
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 
 .project-card {
     position: relative;
     display: inline-block;
-    margin: 1.5rem 1rem 2.5rem;
+    margin: 1rem 1rem 2rem;
     width: 24rem;
     height: 27rem;
-    background-color: rgb(54, 54, 54);
+    background-color: #181a1b;
     border-radius: 2rem;
-    border: .3rem solid rgb(54, 54, 54);
+    border: .3rem solid #181a1b;
 }
 
 @media (max-width:575px) {
@@ -706,7 +637,7 @@ a, a:active, a:hover {
 }
 
 .project-card-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: white;
 }
 
@@ -744,8 +675,4 @@ a, a:active, a:hover {
     text-align: center;
     padding: 1.5rem;
     font-size: 1rem;
-}
-
-#about {
-    background-color: rgb(54, 54, 54);
 }
