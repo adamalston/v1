@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 @import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
-.light-blue {
+.blue {
     color: #58b7ff;
 }
 
-.light-red {
+.red {
     color: #f56c6c;
 }
 
@@ -153,7 +153,7 @@ a, a:active, a:hover {
     flex-grow: 1;
 }
 
-.hero__profile {
+.hero-profile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,12 +162,12 @@ a, a:active, a:hover {
 }
 
 @media (max-width:479px) {
-    .hero__profile {
+    .hero-profile {
         max-width: 17.5rem;
     }
 }
 
-.hero__profile-img-wrapper {
+.hero-profile-img-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,12 +176,12 @@ a, a:active, a:hover {
     border-radius: 100%;
 }
 
-.hero__profile-img {
+.hero-profile-img {
     width: 100%;
     border-radius: 100%;
 }
 
-.hero__icons {
+.hero-icons {
     display: flex;
     width: 100%;
     margin-top: 2rem;
@@ -190,9 +190,9 @@ a, a:active, a:hover {
 }
 
 @media (max-width:991px) {
-    .hero__icons {
+    .hero-icons {
         margin-top: 2.5rem;
-        font-size: 1.8rem;
+        font-size: 3.5rem;
     }
 }
 
@@ -205,12 +205,12 @@ a, a:active, a:hover {
     color: white;
 }
 
-.hero__profile-content {
+.hero-profile-content {
     padding-top: 2rem;
     text-align: center;
 }
 
-.hero__headline {
+.hero-headline {
     font-size: 3rem;
     font-weight: 400;
     padding-bottom: 1rem;
@@ -218,7 +218,13 @@ a, a:active, a:hover {
     letter-spacing: .1rem;
 }
 
-.hero__text {
+@media (max-width:991px) {
+    .hero-headline {
+        letter-spacing: 0rem;
+    }
+}
+
+.hero-text {
     font-size: 1.4rem;
     font-weight: 400;
     color: lightgray;
@@ -415,68 +421,68 @@ a, a:active, a:hover {
     font-size: 1.2rem;
 }
 
-.timeline-card--light-blue {
+.timeline-card-blue {
     color: #58b7ff;
     border-color: #58b7ff;
 }
 
-.timeline-card--light-blue .timeline-card-title {
+.timeline-card-blue .timeline-card-title {
     color: #3facff;
 }
 
-.timeline-card--light-blue .timeline-card-subtitle {
+.timeline-card-blue .timeline-card-subtitle {
     color: #3facff;
 }
 
-.timeline-card--light-blue .timeline-card-time {
+.timeline-card-blue .timeline-card-time {
     color: #58b7ff;
 }
 
-.timeline-card--light-red {
+.timeline-card-red {
     border-color: #f56c6c;
 }
 
-.timeline-card--light-red:before {
+.timeline-card-red:before {
     background-color: #f56c6c;
 }
 
-.timeline-card--light-red .timeline-card-title {
+.timeline-card-red .timeline-card-title {
     color: #f35454;
 }
 
-.timeline-card--light-red .timeline-card-subtitle {
+.timeline-card-red .timeline-card-subtitle {
     color: #f35454;
 }
 
-.timeline-card--light-red .timeline-card-content {
+.timeline-card-red .timeline-card-content {
     color: #f56c6c;
 }
 
-.timeline-card--light-red .timeline-card-time {
+.timeline-card-red .timeline-card-time {
     color: #f56c6c;
 }
 
-.timeline-card--green {
+.timeline-card-green {
     border-color: #13ce66;
 }
 
-.timeline-card--green:before {
+.timeline-card-green:before {
     background-color: #13ce66;
 }
 
-.timeline-card--green .timeline-card-title {
+.timeline-card-green .timeline-card-title {
     color: #11b75a;
 }
 
-.timeline-card--green .timeline-card-subtitle {
+.timeline-card-green .timeline-card-subtitle {
     color: #11b75a;
 }
 
-.timeline-card--green .timeline-card-content {
+.timeline-card-green .timeline-card-content {
     color: #13ce66;
 }
 
-.timeline-card--green .timeline-card-time {
+.timeline-card-green .timeline-card-time {
     color: #13ce66;
 }
 
@@ -528,11 +534,6 @@ a, a:active, a:hover {
     background: url(assets/jpl.jpg) 50%;
     filter: brightness(15%);
     background-size: cover;
-}
-
-.project__title {
-    font-size: 3.2rem;
-    color: #303133;
 }
 
 .project-row {
@@ -663,10 +664,6 @@ a, a:active, a:hover {
 
 .project-card-blackbutton {
     background: black;
-}
-
-.project-card-blackbutton:hover {
-    border: .1em solid white;
 }
 
 .footer {
