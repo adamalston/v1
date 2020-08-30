@@ -1,6 +1,6 @@
 @import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
 .blue {
-    color: #58b7ff;
+    color: #20a0ff;
 }
 
 .red {
@@ -100,11 +100,11 @@ a, a:active, a:hover {
     max-width: 120rem;
     margin: 0 auto;
     align-items: center;
-    min-height: 6rem;
+    min-height: 4rem;
     text-align: right;
-    color: #f2f2f2;
+    color: lightgrey;
     z-index: 2;
-    transition: all .1s linear;
+    transition: all .2s linear;
 }
 
 .nav-item {
@@ -123,7 +123,7 @@ a, a:active, a:hover {
     bottom: -1.3rem;
     left: 0;
     transition: all .1s ease-in-out;
-    background-color: #f2f2f2;
+    background-color: lightgrey;
 }
 
 .nav-item:hover:after {
@@ -168,12 +168,14 @@ a, a:active, a:hover {
     justify-content: center;
     align-items: center;
     padding: .3rem;
-    background: linear-gradient(90deg, #58b7ff, #9437FF);
+    background: url(assets/earth.svg);
     border-radius: 100%;
 }
 
 .hero-profile-img {
     width: 100%;
+    -webkit-transform: scale(.95);
+    transform: scale(.95);
     border-radius: 100%;
 }
 
@@ -194,11 +196,14 @@ a, a:active, a:hover {
 
 .hero .icon-link {
     padding: 0 1.5rem;
-    color: lightgray;
+    color: white;
+    transition: all .2s linear;
 }
 
-.hero .icon-link:hover {
-    color: white;
+.icon-link:hover {
+    color: lightgray;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .hero-profile-content {
@@ -272,10 +277,11 @@ a, a:active, a:hover {
 }
 
 .about .about-container {
-    padding-top: 5rem;
+    padding-top: 3rem;
+    min-height: 100vh;
 }
 
-.about-experiencecol, .about-educationcol, .about-skillcol {
+.about-educationcol, .about-experiencecol, .about-skillcol {
     padding-bottom: 1rem;
 }
 
@@ -355,9 +361,9 @@ a, a:active, a:hover {
     margin-left: 4rem;
     margin-bottom: 2rem;
     max-width: 35rem;
-    color: #409eff;
-    border: .1rem solid #409eff;
+    color: lightgray;
     border-radius: 2rem;
+    background-color: #181a1b;
 }
 
 .timeline-card:before {
@@ -367,7 +373,6 @@ a, a:active, a:hover {
     left: -3.6rem;
     width: 1rem;
     height: 1rem;
-    background-color: #1d8ce0;
     border-radius: 100%;
     z-index: 2;
 }
@@ -400,7 +405,6 @@ a, a:active, a:hover {
 
 .timeline-card-content {
     padding: 0 2rem 1rem;
-    color: #409eff;
     font-size: 1.2rem;
 }
 
@@ -410,73 +414,20 @@ a, a:active, a:hover {
     font-size: 1.2rem;
 }
 
-.timeline-card-blue {
-    color: #58b7ff;
-    border-color: #58b7ff;
-}
-
-.timeline-card-blue .timeline-card-title {
-    color: #3facff;
-}
-
-.timeline-card-blue .timeline-card-subtitle {
-    color: #3facff;
-}
-
-.timeline-card-blue .timeline-card-time {
-    color: #58b7ff;
-}
-
-.timeline-card-red {
-    border-color: #f56c6c;
-}
-
 .timeline-card-red:before {
     background-color: #f56c6c;
-}
-
-.timeline-card-red .timeline-card-title {
-    color: #f35454;
-}
-
-.timeline-card-red .timeline-card-subtitle {
-    color: #f35454;
-}
-
-.timeline-card-red .timeline-card-content {
-    color: #f56c6c;
-}
-
-.timeline-card-red .timeline-card-time {
-    color: #f56c6c;
-}
-
-.timeline-card-green {
-    border-color: #13ce66;
 }
 
 .timeline-card-green:before {
     background-color: #13ce66;
 }
 
-.timeline-card-green .timeline-card-title {
-    color: #11b75a;
-}
-
-.timeline-card-green .timeline-card-subtitle {
-    color: #11b75a;
-}
-
-.timeline-card-green .timeline-card-content {
-    color: #13ce66;
-}
-
-.timeline-card-green .timeline-card-time {
-    color: #13ce66;
+.timeline-card-blue:before {
+    background-color: #20a0ff;
 }
 
 .skills-title {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: .5rem;
     font-size: 2rem;
     color: white;
@@ -492,13 +443,8 @@ a, a:active, a:hover {
     background-color: #181a1b;
     color: lightgray;
     margin: .2rem;
-    transition: all .25s linear;
     border-radius: 2rem;
-}
-
-.skills-tile:hover {
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15);
+    font-size: 1.2rem;
 }
 
 .project {
@@ -555,7 +501,8 @@ a, a:active, a:hover {
 }
 
 .project-container {
-    padding-top: 2rem;
+    padding-top: 3rem;
+    min-height: 100vh;
 }
 
 .project-card {
@@ -589,23 +536,19 @@ a, a:active, a:hover {
 }
 
 .project-card-website {
-    background-image: url(assets/project-website.png);
+    background-image: url(assets/projects/website.png);
 }
 
 .project-card-summarizer {
-    background-image: url(assets/project-summarizer.png);
+    background-image: url(assets/projects/summarizer.png);
 }
 
 .project-card-2048 {
-    background-image: url(assets/project-2048.png);
+    background-image: url(assets/projects/2048.png);
 }
 
 .project-card-connect4 {
-    background-image: url(assets/project-connect4.png);
-}
-
-.project-card-smmryextension {
-    background-image: url(assets/project-smmryextension.png);
+    background-image: url(assets/projects/connect4.png);
 }
 
 .project-card-sushi {
@@ -613,7 +556,7 @@ a, a:active, a:hover {
 }
 
 .project-card-pokemongo {
-    background-image: url(assets/project-pokemongo.png);
+    background-image: url(assets/projects/pokemongo.png);
 }
 
 .project-card-content {
@@ -658,6 +601,6 @@ a, a:active, a:hover {
 }
 
 #redir {
-    color: #58b7ff;
+    color: #20a0ff;
     text-decoration: underline;
 }
