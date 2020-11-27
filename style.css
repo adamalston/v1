@@ -67,17 +67,6 @@ a, a:active, a:hover {
     color: white;
 }
 
-.content {
-    font-size: 1.8rem;
-    line-height: 3rem;
-}
-
-@media (max-width:767px) {
-    .content {
-        font-size: 1.6rem;
-    }
-}
-
 .navbar {
     position: fixed;
     top: 0;
@@ -100,7 +89,7 @@ a, a:active, a:hover {
     max-width: 120rem;
     margin: 0 auto;
     align-items: center;
-    min-height: 4rem;
+    padding: 1rem;
     text-align: right;
     color: lightgrey;
     z-index: 2;
@@ -120,7 +109,7 @@ a, a:active, a:hover {
     width: 100%;
     height: .2rem;
     opacity: 0;
-    bottom: -1.3rem;
+    bottom: -1rem;
     left: 0;
     transition: all .1s ease-in-out;
     background-color: lightgrey;
@@ -154,7 +143,7 @@ a, a:active, a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 22.5rem;
+    max-width: 20rem;
 }
 
 @media (max-width:479px) {
@@ -169,22 +158,21 @@ a, a:active, a:hover {
     align-items: center;
     padding: .3rem;
     background: url(assets/earth.svg);
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 .hero-profile-img {
     width: 100%;
     -webkit-transform: scale(.95);
     transform: scale(.95);
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 .hero-icons {
     display: flex;
     width: 100%;
-    margin-top: 2rem;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 @media (max-width:991px) {
@@ -213,21 +201,13 @@ a, a:active, a:hover {
 
 .hero-headline {
     font-size: 3rem;
-    font-weight: 400;
     padding-bottom: 1rem;
     color: white;
-    letter-spacing: .1rem;
-}
-
-@media (max-width:991px) {
-    .hero-headline {
-        letter-spacing: 0rem;
-    }
 }
 
 .hero-text {
-    font-size: 1.4rem;
-    font-weight: 400;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
     color: lightgray;
 }
 
@@ -299,7 +279,7 @@ a, a:active, a:hover {
 
 .about-card-wrapper {
     flex: 0 0 25%;
-    padding: .8rem;
+    padding: 2rem;
 }
 
 @media (max-width:991px) {
@@ -321,17 +301,11 @@ a, a:active, a:hover {
     background-color: #181a1b;
     border-radius: 2rem;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .05);
-    transition: all .2s linear;
     padding: 2rem;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     text-align: center;
-}
-
-.about-card:hover {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
 }
 
 @media (max-width:575px) {
@@ -344,15 +318,20 @@ a, a:active, a:hover {
     margin: 0 auto;
     width: 6rem;
     height: 6rem;
+    transition: all .2s linear;
+}
+
+.about-card-icon:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .about-card-icon>img {
     width: 100%;
 }
 
-.about-card-text {
-    font-size: 1.2rem;
-    font-weight: 400;
+.about-card-title {
+    font-size: 1.25rem;
     color: lightgray;
 }
 
@@ -360,7 +339,7 @@ a, a:active, a:hover {
     position: relative;
     margin-left: 4rem;
     margin-bottom: 2rem;
-    max-width: 35rem;
+    max-width: 30rem;
     color: lightgray;
     border-radius: 2rem;
     background-color: #181a1b;
@@ -373,7 +352,7 @@ a, a:active, a:hover {
     left: -3.6rem;
     width: 1rem;
     height: 1rem;
-    border-radius: 100%;
+    border-radius: 50%;
     z-index: 2;
 }
 
@@ -381,25 +360,28 @@ a, a:active, a:hover {
     content: "";
     position: absolute;
     left: -3.3rem;
-    top: .2rem;
-    height: 110%;
-    min-height: 15rem;
+    top: 0;
+    height: calc(100% + 2rem);
     width: .4rem;
     background-color: #181a1b;
 }
 
+.timeline-card:last-of-type:after {
+    height: 100%;
+}
+
 .timeline-card-title {
     padding: 1rem 2rem;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.25rem;
     padding-bottom: 0;
 }
 
 .timeline-card-subtitle {
-    padding: 1rem 2rem;
-    padding-top: .25rem;
-    font-size: 1rem;
-    font-size: 1.3rem;
+    padding: .25rem 2rem 1rem;
+    font-size: 1.125rem;
+}
+
+.about-experiencecol .timeline-card-subtitle {
     font-style: italic;
 }
 
@@ -409,9 +391,9 @@ a, a:active, a:hover {
 }
 
 .timeline-card-time {
-    padding: .5rem 2rem;
+    padding: 1rem 2rem;
     text-align: right;
-    font-size: 1.2rem;
+    font-size: 1.125rem;
 }
 
 .timeline-card-red:before {
@@ -444,7 +426,7 @@ a, a:active, a:hover {
     color: lightgray;
     margin: .2rem;
     border-radius: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.125rem;
 }
 
 .project {
@@ -573,7 +555,7 @@ a, a:active, a:hover {
     display: inline-block;
     bottom: .5rem;
     right: .5rem;
-    padding: .8rem 2rem;
+    padding: .75rem 1.5rem;
     font-size: 1.2rem;
     color: white;
     background: #20a0ff;
@@ -596,7 +578,7 @@ a, a:active, a:hover {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 1.5rem;
+    padding: 1rem;
     font-size: 1rem;
 }
 
